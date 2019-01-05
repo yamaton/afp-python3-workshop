@@ -6,11 +6,13 @@
 
 import functools
 
+dir(functools)
 
 # simple of example of using map
 # you can use map with a named function
 def double(a):
     return 2*a
+
 
 alist = range(0,11)
 doubles = map(double, alist)
@@ -31,8 +33,12 @@ evens = filter(lambda x: x%2 == 0, alist)
 print(evens)
 
 # example of partial application with another adder example
+
+
 def multiply(a,b):
     return a * b
 
+
 double = functools.partial(multiply, 2)
-print double(2)
+print(double(2))
+
