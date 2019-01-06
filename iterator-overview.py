@@ -21,14 +21,17 @@
 import itertools
 from collections import Sequence
 
+
 class IntStream(Sequence):
     def __init__(self, init_value, stepsize):
         self.it = itertools.count(init_value, stepsize)
         self._cache = []
+
     def __getitem__(self, index):
         while len(self._cache) <= index:
             self._cache.append(next(self.it))
         return self._cache[index]
+
     def __len__(self):
         return len(self._cache)
 
@@ -39,6 +42,8 @@ first_ten = [x for _, x in zip(range(10), ints)]
 print(first_ten)
 # We can generalized the above code to the following Sequence subclass
 # (code from "Functional Programming in Python" by David Mertz)
+
+
 class ExpandingSequence(Sequence):
     def __init__(self, it):
         self.it = it
@@ -60,6 +65,16 @@ class ExpandingSequence(Sequence):
 def to100():
     for x in range(100):
         yield x
+
+def to(num):
+    for x in range(num):
+        yield x
+
+# collect the first 10 numbers
+
+
+a = [x for _, x in zip(range(10), to(1000000))]
+print(a)
 
 #
 # the above code will create a generator object that implements the iterator protocol
