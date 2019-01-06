@@ -1,6 +1,6 @@
 #!/usr/bin/python -Wall
 
-import itertools
+import functools
 import operator
 
 ################################################################################
@@ -13,7 +13,7 @@ import operator
 # example of a simple anonymous function in python
 add2 = lambda x: x + 2
 
-print add2(2)
+print(add2(2))
 
 #
 # another way of generating functions with a function
@@ -26,8 +26,8 @@ def create_adder(a):
 add4 = create_adder(4)
 add3 = create_adder(3)
 
-print add4(4)
-print add3(4)
+print(add4(4))
+print(add3(4))
 
 # old way of creating closures without lambdas
 def create_adder_old_way(a):
@@ -37,7 +37,7 @@ def create_adder_old_way(a):
 
 add5 = create_adder_old_way(5)
 
-print add5(6)
+print(add5(6))
 
 # example of function that creates functions
 def create_greeter():
@@ -46,7 +46,7 @@ def create_greeter():
     inner(scoped) function definitions
     """
     def greeter(x):
-        print x
+        print(x)
 
     return greeter
 
@@ -72,12 +72,16 @@ blist = [adder(20) for adder in adders]
 ################################################################################
 
 # factorial example
+
+
 def factorial(N):
     assert isinstance(N, int) and N >= 1
     return 1 if N <= 1 else N*factorial(N-1)
 
 # clearly this would blow up the recursive stack if we create stack depths > 1000.
 # in general this style is discouraged and replaced with a more iterative style
+
+
 def factorial_iterative(N):
     result = 1
     while N > 1:
@@ -86,12 +90,18 @@ def factorial_iterative(N):
 
 # in python though, the fastest implementation in fact is a functional style
 # factorial that uses reduce (compliments of "Functional Programming in Python" by David Mertz)
+
+
 def factorial_reduce(N):
-    return reduce(operator.mul, range(1, N+1), 1)
+    return functools.reduce(operator.mul, range(1, N+1))
 
 # using recursion, one can make an entire program based on a simple recursive expressive.
+
+
 def identity_print(x):
-    print x
+    print(x)
     return x
-afunc = lambda: identity_print(raw_input("FP --- ")) == 'quit' or afunc()
+
+
+afunc = lambda: identity_print(input("FP --- ")) == 'quit' or afunc()
 afunc()
