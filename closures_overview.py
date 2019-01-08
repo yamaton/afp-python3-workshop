@@ -1,7 +1,5 @@
 #!/usr/bin/python -Wall
 
-import functools
-import operator
 
 ################################################################################
 #
@@ -11,8 +9,9 @@ import operator
 
 
 # example of a simple anonymous function in python
-add2 = lambda x: x + 2
 
+
+add2 = lambda x: x + 2
 print(add2(2))
 
 #
@@ -20,8 +19,11 @@ print(add2(2))
 # notice this will create a closure and bind the lambda around a which is
 # scoped and bound in the outer function before the lambda is constructed.
 #
+
+
 def create_adder(a):
     return lambda b: a + b
+
 
 add4 = create_adder(4)
 add3 = create_adder(3)
@@ -29,17 +31,22 @@ add3 = create_adder(3)
 print(add4(4))
 print(add3(4))
 
-# old way of creating closures without lambdas
+# another way of creating closures (without lambdas)
+
+
 def create_adder_old_way(a):
     def adder(b):
         return a + b
     return adder
+
 
 add5 = create_adder_old_way(5)
 
 print(add5(6))
 
 # example of function that creates functions
+
+
 def create_greeter():
     """
     Example of creating a function that creates function with
