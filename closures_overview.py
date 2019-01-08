@@ -71,3 +71,19 @@ for x in range(5):
 
 alist = [adder(10) for adder in adders]
 blist = [adder(20) for adder in adders]
+
+# simple fix: use actual inner functions instead of anonymous functions
+
+
+def make_adder(x):
+    def add(y):
+        return x + y
+    return add
+
+
+badders = []
+for x in range(5):
+    badders.append(make_adder(x))
+
+alist = [adder(10) for adder in badders]
+blist = [adder(20) for adder in badders]
