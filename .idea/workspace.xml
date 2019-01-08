@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1e9d2056-a81a-47cb-9b5b-8f9bbf7db3be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/closures_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/closures_overview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions-overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions_overview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterator-overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/iterator_overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FP-in-Python.key" beforeDir="false" afterPath="$PROJECT_DIR$/FP-in-Python.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iterator_overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/iterator_overview.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,27 +23,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="py" value="6" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="972" />
-          <entry key="dummy" value="3" />
-          <entry key="py" value="4857" />
+          <entry key="Python Console" value="1310" />
+          <entry key="dummy" value="5" />
+          <entry key="py" value="5376" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="5829" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Python" value="6686" />
         </counts>
       </usages-collector>
     </session>
@@ -78,10 +77,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fp-packages-overview.py">
+        <entry file="file://$PROJECT_DIR$/fp_packages_overview.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="e#204#220#0" expanded="true" />
                 <marker date="1546800034760" expanded="true" signature="461:2185" ph="..." />
@@ -92,19 +91,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/iterator_overview.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="444">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
-                <marker date="1546802171376" expanded="true" signature="2074:2208" ph="..." />
+                <element signature="e#758#774#0" expanded="true" />
+                <marker date="1546972834396" expanded="true" signature="1212:1247" ph="..." />
+                <marker date="1546972834396" expanded="true" signature="2452:2586" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/closures_overview.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8">
@@ -147,6 +148,7 @@
         <option value="$PROJECT_DIR$/callables.py" />
         <option value="$PROJECT_DIR$/iterator-overview.py" />
         <option value="$PROJECT_DIR$/closures_overview.py" />
+        <option value="$PROJECT_DIR$/iterator_overview.py" />
       </list>
     </option>
   </component>
@@ -253,14 +255,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="23" width="1407" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.2611465" />
+      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.25987262" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,10 +323,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fp-packages-overview.py">
+    <entry file="file://$PROJECT_DIR$/fp_packages_overview.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#204#220#0" expanded="true" />
             <marker date="1546800034760" expanded="true" signature="461:2185" ph="..." />
@@ -333,15 +336,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iterator_overview.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <marker date="1546802171376" expanded="true" signature="2074:2208" ph="..." />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/demo-data.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/closures_overview.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -349,6 +345,18 @@
           <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
           <folding>
             <element signature="e#26#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iterator_overview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="e#758#774#0" expanded="true" />
+            <marker date="1546972834396" expanded="true" signature="1212:1247" ph="..." />
+            <marker date="1546972834396" expanded="true" signature="2452:2586" ph="..." />
           </folding>
         </state>
       </provider>

@@ -19,7 +19,8 @@
 
 # the collections module provides many built-in objects and classes
 import itertools
-from collections import Sequence
+from collections import Sequence, abc
+import reprlib
 
 
 class IntStream(Sequence):
@@ -32,14 +33,33 @@ class IntStream(Sequence):
             self._cache.append(next(self.it))
         return self._cache[index]
 
+    def __iter__(self):
+        return self.it
+
+    def __next__(self):
+        return next(self.it)
+
     def __len__(self):
         return len(self._cache)
 
+    def __repr__(self):
+        return "IntStream({0})".format(reprlib.repr(self.it))
+
 # example of usage
+
+
 ints = IntStream(0, 1)
 first_ten = [x for _, x in zip(range(10), ints)]
-
 print(first_ten)
+
+
+# we can actually check to see if such an item is iterable by using collections.abc.Iterable
+
+
+issubclass(IntStream, abc.Iterable)
+
+# we can check instances as well
+
 # We can generalized the above code to the following Sequence subclass
 # (code from "Functional Programming in Python" by David Mertz)
 
