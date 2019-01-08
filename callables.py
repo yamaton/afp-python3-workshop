@@ -18,7 +18,7 @@ class Greeter:
 spanish_greeting = Greeter("hola")
 spanish_greeting("Ram")
 
-# this is equivalent to the following higher-order function that will
+# the following is equivalent to the above example
 
 
 def create_greeter(greeting):

@@ -60,6 +60,9 @@ issubclass(IntStream, abc.Iterable)
 
 # we can check instances as well
 
+isinstance(ints, abc.Iterable)
+isinstance(first_ten, abc.Iterable)
+
 # We can generalized the above code to the following Sequence subclass
 # (code from "Functional Programming in Python" by David Mertz)
 
@@ -68,12 +71,18 @@ class ExpandingSequence(Sequence):
     def __init__(self, it):
         self.it = it
         self._cache = []
+
     def __getitem__(self, index):
         while len(self._cache) <= index:
             self._cache.append(next(self.it))
         return self._cache[index]
+
     def __len__(self):
         return len(self._cache)
+
+    def __repr__(self):
+        return "ExpandingSequence({0})".format(reprlib.repr(self.it))
+
 
 ################################################################################
 #
