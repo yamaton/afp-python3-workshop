@@ -134,8 +134,8 @@ astream = itertools.count(0, 1)
 alist = [x for _, x in zip(range(10), astream)]
 
 # Another way of grabbing a sample of the stream using takewhile and a lambda
-blist = itertools.takewhile(lambda x: x < 10, astream)
-clist = itertools.takewhile(lambda x: x < 10, astream)
+blist = list(itertools.takewhile(lambda x: x < 10, astream))
+clist = list(itertools.takewhile(lambda x: x < 10, astream))
 
 # in all cases, there is a little gotcha with the above code. 
 print(alist == blist) # what do you think the result would be here
